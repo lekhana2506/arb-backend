@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_certificate_certificates",
+  "info": {
+    "displayName": "Certificate"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "issueDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Link": {
+      "type": "string",
+      "regex": "^(https?:\\/\\/)?([\\w\\-]+(\\.[\\w\\-]+)+)([\\w.,@?^=%&:\\/~+#\\-]*[\\w@?^=%&\\/~+#\\-])?$"
+    }
+  }
+}

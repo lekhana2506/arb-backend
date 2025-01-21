@@ -382,6 +382,7 @@ export interface ApiUserResumeUserResume extends Struct.CollectionTypeSchema {
   };
   attributes: {
     address: Schema.Attribute.Text;
+    Certificate: Schema.Attribute.Component<'certificate.certificate', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

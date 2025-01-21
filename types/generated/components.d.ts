@@ -1,5 +1,19 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CertificateCertificate extends Struct.ComponentSchema {
+  collectionName: 'components_certificate_certificates';
+  info: {
+    displayName: 'Certificate';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    issueDate: Schema.Attribute.Date;
+    Link: Schema.Attribute.String;
+    organization: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface EducationEducation extends Struct.ComponentSchema {
   collectionName: 'components_education_educations';
   info: {
@@ -49,6 +63,7 @@ export interface SkillsSkills extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'certificate.certificate': CertificateCertificate;
       'education.education': EducationEducation;
       'experience.experience': ExperienceExperience;
       'skills.skills': SkillsSkills;
